@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(var(--pixel) * 1300);
+
+}
+/*=========== custom property ==============*/
+:root{
+    --pixel : 0.065vw;
+    --primary : #d6a354;
+    --secondary : #252525;
+    --gray : #707070;
+
+    --transition : 0.3s all ease;
+}
+/*
+**other
+*/
+a{
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+.d-flex{
+    display: flex;
+}
+.fd-colums{
+    flex-direction: column;
+}
+.js-center{
+    justify-content: center;
+}
+.js-between{
+    justify-content: space-between;
+}
+.al-center{
+    align-items: center;
+}
+.gap-20{
+    gap: calc(var(--pixel) * 20) ;
+}
+.gap-10{
+    gap: calc(var(--pixel) * 10) ;
+}
+.gap-30{
+    gap: calc(var(--pixel) * 30) ;
+}
+.gap-40{
+    gap: calc(var(--pixel) * 40) ;
+}
+.gap-50{
+    gap: calc(var(--pixel) * 50) ;
+}
+/**====== Start header =====*/
+header{
+    text-align: center;
+    background-color: #28282B;
+    margin-bottom: calc(var(--pixel) * 300) ;
+}
+header .image{
+    position: relative;
+    top: calc(var(--pixel) * 230);
+    width: calc(var(--pixel) * 500);
+    height: calc(var(--pixel) * 500);
+    background-image: url(/image/francespa.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: calc(var(--pixel) * 10) solid #fff;
+    margin: auto;
+}
+/**====== Start section links =====*/
+section .title{
+    text-align: center;
+    margin: calc(var(--pixel) * 80) 0;
+}
+section .title h1{
+    margin-bottom: calc(var(--pixel) * 60);
+    font-weight: 700;
+    font-size: calc(var(--pixel) * 120);
+    line-height: 1.2;
+}
+section .title p{
+    font-weight: 600;
+    font-size: calc(var(--pixel) * 65);
+    line-height: 1.1;
+    color: #252525;
+}
+section .links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: calc(var(--pixel) * 100);
+    padding: calc(var(--pixel) * 60) 0;
+
+}
+section .links a {
+    padding: calc(var(--pixel) * 50) calc(var(--pixel) * 60);
+    border: calc(var(--pixel) * 2) solid #000;
+    border-radius: calc(var(--pixel) * 115);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(var(--pixel) * 50);
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: calc(var(--pixel) * 65);
+    line-height: 1.1;
+}
+section .links a i{
+    font-size: calc(var(--pixel) * 120);
+}
+section .links a .fa-instagram{
+    color: #EF2464;
+}
+section .links a .fa-tiktok{
+    color: #010101;
+}
+section .links a .fa-phone{
+    color: #089cf5;
+}
+section .links a .fa-location-dot{
+    color: #0c954d;
+}
